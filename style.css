@@ -1,25 +1,79 @@
 body {
-    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
+    margin: 0;
+    font-family: "Overpass", sans-serif;
     color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: darkgray;
+    text-decoration: none;
+}
+  
+a:hover {
+  color: dodgerblue;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1024px;
 }
 
 header {
-    width: 100%;
-    height: 30vh;
+    position: relative;
+    display: flex;
+    color: #fff;
     background-color: black;
-    padding-left: 10px;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+}
+  
+header:before {
+    position: absolute;
+    content: "";
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-position: center;
+    opacity: 0.3;
+    background-image: url("//sakiyo212.github.io/assets/Isekai_Quartet_Cover.jpg");
+}
+
+nav {
+  position: relative;
+  display: grid;
+  padding: 7vh;
+}
+
+nav h2 {
+  margin: 0 0 5px 0;
+  font-size: xx-large;
+  font-weight: 900;
+}
+
+nav ul {
+  display: flex;
+  padding-inline-start: 0;
+  margin: 0;
+}
+
+nav li {
+  display: block;
+  margin-right: 5px;
 }
 
 main {
     display: flex;
     width: 100%;
     height: 1000vh;
-    background-color: rgb(52, 116, 153);
-    padding-left: 10px;
+    background-color: blueviolet;
+    padding-left: 10px; 
 }
 
 .header-main{
@@ -39,16 +93,6 @@ main {
 .image-article{
     display: block;
     text-align: center;
-  
-}
-
-ul {
-    list-style-type: none;
-}
-
-.wrapper {
-    margin: 0 auto;
-    max-width: 1024px;
 }
 
 #content {
@@ -66,61 +110,14 @@ ul {
 
 aside {
     width: 20%;
+    height: 7%;
     background-color: tomato;
     padding-left: 10px;
+    padding-right: 10px;
 }
 
 .caption{
     font-size: smaller;
-}
-
-.navbar {
-    display: block;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-nav ul li span {
-    transition: all 300ms;
-    background-color: rgb(var(--tw-clr-primary-300) / 0);
-}
-
-.navbar-ul {
-    display: flex;
-    align-items: center;
-    font-size: 0.75rem /* 12px */;
-    line-height: 1rem /* 16px */;
-}
-
-.navbar-ul > * ~ * {
-    margin-left: 1rem;
-}
-
-.navbar-link {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    border-radius: 0.125rem;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
-    font-weight: 500;
-    color: rgb(60, 206, 186);
-}
-
-.navbar-link:hover {
-    color: var(--clr-primary-200);
-}
-  
-.navbar-link:focus {
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-}
-
-.name{
-    font-size: 3rem;
-    padding-left: 2rem;
 }
 
 footer {
