@@ -19,7 +19,7 @@ a:hover {
 
 .wrapper {
     margin: 0 auto;
-    max-width: 1024px;
+    
 }
 
 header {
@@ -126,4 +126,9 @@ footer {
     background-color: cadetblue;
     padding-left: 10px;
     padding-top: 0px;
+}
+
+.backgroundDrop{
+    background-color: rgba(0, 0, 0, 0.5);
+
 }
